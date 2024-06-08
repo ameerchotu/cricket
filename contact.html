@@ -23,17 +23,23 @@
     <main>
         <selection class="con">
             <div class="contacts">
-        <form action="">
-            <fieldset>
-                <legend><h2>Tickets are Here</h2></legend>
-                <label for="user">User name:</label><input type="text" name="email" required placeholder="user id here"><br><br>
-                <label for="passward">Passward:</label><input type="password" name="passward" required placeholder="passward">,<br><br>
-                <label for="gender">Gender:</label><input type="radio" name="male">male<input type="radio" name="female">female<br><br>
-                <label for="checkbox"> Select Seats:</label><input type="checkbox" name="Diamond class">Diamond class<br><br><input type="checkbox" name="Gold class">Godel class<br><br><input type="checkbox" name="Sliver class">Silverclass<br><br>
-                <label for="submit">submit:</label> <input type="button">
-
-            </fieldset>
-        </form>
+          
+                <h1>Contact Us</h1>
+                <form action="submit.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+            
+                    <label for="subject">phone no:</label>
+                    <input type="text" id="subject" name="subject" required><br><br>
+            
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+                    <input type="submit" value="Submit">
+                </form>
             </div>
         </selection>
     </main>
